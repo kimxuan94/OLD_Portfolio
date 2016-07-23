@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!-- 
+ * Markup for jQuery Reveal Plugin 1.0
+ * www.ZURB.com/playground
+ * Copyright 2010, ZURB
+ * Free to use under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ -->
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Reveal Demo</title>
+		
+		<!-- Attach our CSS -->
+	  	<link rel="stylesheet" href="reveal.css">
+	  	<link rel="stylesheet" href="css/foundation.css" />
+    	<link rel="stylesheet" href="css/app.css" />
+    	<link rel="stylesheet" href="../foundation-icons/foundation-icons.css" />
+    	<link rel="stylesheet" href="css/animate.min.css" />
+		<link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'> 
+		<!--Animation timeline config-->
+		<link href='http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700' rel='stylesheet' type='text/css'>
+	
+	  	
+		<!-- Attach necessary scripts -->
+		<!-- <script type="text/javascript" src="jquery-1.4.4.min.js"></script> -->
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.min.js"></script>
+		<script type="text/javascript" src="../Foundation/jquery.reveal.js"></script>
+		
+		<style type="text/css">
+			body { font-family: "HelveticaNeue","Helvetica-Neue", "Helvetica", "Arial", sans-serif; }
+			.big-link { display:block; margin-top: 100px; text-align: center; font-size: 70px; color: #06f; }
+		</style>
+		
+	</head>
+	<body>
+
+		<!--Top Bar-->
+    <nav class="top-bar" data-topbar role="navigation">
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="index.html">Ophélie Toumine</a></h1>
+    </li>
+     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+  </ul>
+
+  <section class="top-bar-section">
+    <!-- Right Nav Section-->
+    <ul class="left">
+      <li><a href="about.html">A propos</a></li>
+      <li class="has-dropdown">
+        <a href="#">Mon CV</a>
+        <!--<ul class="dropdown">-->
+          <li><a href="skills.html">Compétences</a></li>
+          <li><a href="demo.html">Expériences</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <!-- Left Nav Section-->
+    <ul class="left">
+      <li><a href="portfolio.html">Portfolio</a></li>
+    </ul>
+  </section>
+</nav>
+<br>
+<br>
+
+		<a href="#" class="big-link" data-reveal-id="myModal">
+			Fade and Pop
+		</a>	
+		
+		<a href="#" class="big-link" data-reveal-id="myModal" data-animation="fade">
+			Fade
+		</a>
+		
+		<a href="#" class="big-link" data-reveal-id="myModal" data-animation="none">
+			None
+		</a>
+
+		<div id="myModal" class="reveal-modal">
+			<h1>Reveal Modal Goodness</h1>
+			<p>This is a default modal in all its glory, but any of the styles here can easily be changed in the CSS.</p>
+			<a class="close-reveal-modal">&#215;</a>
+		</div>
+			
+	</body>
+</html>

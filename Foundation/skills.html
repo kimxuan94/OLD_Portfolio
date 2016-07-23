@@ -1,0 +1,155 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation | Porfolio</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="foundation-icons/foundation-icons.css" />
+    <link rel="stylesheet" href="css/animate.min.css">
+<link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+<script src="js/vendor/modernizr.js"></script>
+  </head>
+  <body>
+
+    <!--Top Bar-->
+    <nav class="top-bar" data-topbar role="navigation">
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="index.html">Ophélie Toumine</a></h1>
+    </li>
+     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+  </ul>
+
+  <section class="top-bar-section">
+    <!-- Right Nav Section-->
+    <ul class="left">
+      <li><a href="about.html">A propos</a></li>
+      <li class="dropdown">
+        <a href="#">Mon CV ></a>
+        <!--<ul class="dropdown">-->
+          <li><a href="skills.html">Compétences</a></li>
+          <li><a href="experiences.html">Expériences</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <!-- Left Nav Section-->
+    <ul class="left">
+      <li><a href="portfolio.html">Portfolio</a></li>
+    </ul>
+  </section>
+</nav>
+
+ <div class="medium-10 columns">
+ <img src="../Foundation/foundation-icons/svgs/fi-widget.svg" class="widget"/><h2 class="p_skills">Mes compétences</h2>
+<br>
+ <!--<p>Et si on faisait des jauges animées en CSS :)</p>-->
+    <div class="panel callout radius" id="com">
+    <img src="../Foundation/foundation-icons/svgs/fi-comments.svg" class="lng"/><h4 class="lang">LANGUES:</h4>
+    <br>
+    	<h5> ANGLAIS (INTERMEDIAIRE) | ESPAGNOL (SCOLAIRE) </h5>
+    </div>
+
+    <br>
+    <div class="panel callout radius" id="com">
+    <img src="../Foundation/foundation-icons/svgs/fi-power.svg" class="pow"/><h4 class="info">INFORMATIQUE/WEB:</h4>
+    <br>
+    <br>
+
+  <ul class="accordion" data-accordion>
+  <li class="accordion-navigation">
+    <a href="#panel1a">Programmation</a>
+    <div id="panel1a" class="content active">
+      <div class="progress-bar orange shine">
+    <span style="width: 35%;" class="javas">JavaScript</span>
+    </div>
+    <div class="progress-bar orange shine">
+    <span style="width: 35%;" class="php">PHP</span>
+    </div>
+    <div class="progress-bar orange shine">
+    <span style="width: 50%;" class="sql">SQL</span>
+    </div>
+    <div class="progress-bar orange shine">
+    <span style="width: 20%;" class="jqry">JQuery</span>
+    </div>
+    </div>
+  </li>
+   <li class="accordion-navigation">
+    <a href="#panel2a">Développement web</a>
+    <div id="panel2a" class="content active">
+    <div class="progress-bar orange shine">
+    <span style="width: 90%;" class="ht5">HTML 5</span>
+    </div>
+    <div class="progress-bar orange shine">
+    <span style="width: 85%;" class="cs3">CSS 3</span>
+    </div>
+    </div>
+  </li>
+  <li class="accordion-navigation">
+    <a href="#panel3a">CMS</a>
+    <div id="panel3a" class="content">
+      <div class="progress-bar orange shine">
+    <span style="width: 90%;" class="wp">Wordpress</span>
+    </div>
+    <div class="progress-bar orange shine">
+    <span style="width: 45%;" class="dru">Drupal</span>
+    </div>
+    </div>
+  </li>
+   <li class="accordion-navigation">
+    <a href="#panel4a">Framework</a>
+    <div id="panel4a" class="content">
+      <div class="progress-bar orange shine">
+    <span style="width: 80%;" class="boot">Bootstrap</span>
+    </div>
+      <div class="progress-bar orange shine">
+    <span style="width: 65%;" class="fnd5">Foundation 5</span>
+    </div>
+    </div>
+  </li>
+  </ul>
+    </div>
+    <br>
+    <div class="panel callout radius" id="com2">
+    <img src="../Foundation/foundation-icons/svgs/fi-paint-bucket.svg" class="dsg"/><h4 class="design">DESIGN:</h4>
+    <br>
+    <img src="../Foundation/foundation-icons/svgs/photoshop.svg" class="adobe"><h5 class="debutant1">PHOTOSHOP (DEBUTANT)</h5>
+    <img src="../Foundation/foundation-icons/svgs/indesign.svg" class="adobe2"><h5 class="hug2"> IN DESIGN (DEBUTANT)</h5>
+    <img src="../Foundation/foundation-icons/svgs/flash.svg" class="adobe3"><h5 class="hug3"> ADOBE FLASH (DEBUTANT)</h5>
+    </div>
+    <br>
+    <!--Img test-->
+</div>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/foundation/foundation.js"></script>
+    <script src="js/foundation/foundation.dropdown.js"></script>
+    <script src="js/foundation/foundation.accordion.js"></script>
+
+    <script>
+      $(document).foundation();
+    </script>
+
+    <script src="./Stylish CSS3 progress bars - demo_files/jquery-latest.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$('.quarter').click(function(){
+			$(this).parent().prev().children('span').css('width','25%');
+			});
+		$('.half').click(function(){
+			$(this).parent().prev().children('span').css('width','50%');
+			});
+		$('.three-quarters').click(function(){
+			$(this).parent().prev().children('span').css('width','75%');
+			});
+		$('.full').click(function(){
+			$(this).parent().prev().children('span').css('width','100%');
+			});
+	});
+</script>
+  </body>
+</html>
